@@ -16,10 +16,31 @@ i{
 .debug{
   border: 1px solid black;
 }
+
 /* COMMON RULES */
 .aside_top,
 .main_top{
   height: 60px;
+}
+.my_container,
+.main_top,
+.aside_top,
+.my_user,
+.notification_cercle_box,
+.notification_settings,
+.message_input{
+  display: flex;
+  align-items: center;
+}
+.my_container,
+.notification_cercle_box{
+  justify-content: center;
+}
+.aside_top,
+.main_top,
+.my_user,
+.message_input{
+  justify-content: space-between;
 }
 
 /* CONTAINER */
@@ -33,6 +54,7 @@ i{
   background-color: #EAEAEA;
   min-width: 792px;
 }
+
 /* ASIDE */
 aside{
   width: 30%;
@@ -42,6 +64,35 @@ aside{
   width: 40px;
   border-radius: 50%;
 }
+.notification_settings{
+  height: 60px;
+  background-color: #8EDAFC;
+}
+.notification_cercle_box{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  color: #8EDAFC;
+}
+.notification_cercle_box i{
+  color: #8EDAFC;
+}
+.notification_settings_text h3{
+  font-size: 1rem;
+}
+.notification_settings_text p{
+  color: gray;
+  text-decoration: underline;
+}
+.chat_search {
+  padding: 6px;
+  height: 50px;
+}
+.chat_search input{
+  font-size: .3;
+}
+
 /* MAIN */
 main{
   width: 70%;
@@ -58,6 +109,7 @@ main{
   font-size: 1.5rem;
   margin: 0px 20px;
 }
+
 /* EFFECT HOVER */
 .my_user:hover{
   cursor: pointer;

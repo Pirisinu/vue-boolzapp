@@ -21,16 +21,17 @@
 </head>
 <body>
   
-  <div class="my_container d-flex justify-content-center align-items-center debug" id="app">
+  <div class="my_container debug" id="app">
     <div class="chat_box d-flex">
 
       <aside class="h-100 debug">
 
-        <div class="aside_top debug d-flex align-items-center justify-content-between ">
-          <div class="my_user d-flex align-items-center ms-2 p-1 ">
+        <div class="aside_top">
+          <div class="my_user ms-2 p-1">
             <img class="user_img" src="img/avatar_io.jpg" alt="">
-            <p class="user_name m-0 ms-2 ">Sofia</p>
+            <p class="user_name m-0 ms-2">Sofia</p>
           </div>
+
           <div class="user_function">
             <i class="fa-solid fa-circle-notch"></i>
             <i class="fa-solid fa-message"></i>
@@ -38,13 +39,31 @@
           </div>
         </div>
 
+        <div class="notification_settings">
+          <div class="notification_cercle_box ms-3">
+            <i class="fa-solid fa-bell-slash"></i>
+          </div>
+          <div class="notification_settings_text d-flex flex-column justify-content-around p-2">
+            <h3 class="m-0">Ricevi notifiche di nuovi messaggi</h3>
+            <p class="m-0">Attiva notifiche desktop</p>
+          </div>
+        </div>
+          <div class="input-group chat_search">
+            <span class="input-group-text h-100 " id="basic-addon1">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <input type="text" class="form-control h-100 " placeholder="Cerca o inizia una nuova chat" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+
+        <div class=""></div>
+
       </aside>
 
       <main class="h-100 ">
 
-        <div class="main_top d-flex align-items-center justify-content-between">
+        <div class="main_top">
 
-          <div class="my_user d-flex align-items-center ms-2 p-1 ">
+          <div class="my_user ms-2 p-1 ">
 
             <img class="user_img" src="img/avatar_io.jpg" alt="">
 
@@ -64,15 +83,15 @@
         </div>
         <div class="main_content">
         </div>
-        <div class="message_input d-flex justify-content-between align-items-center ">
+        <div class="message_input">
           <i class="fa-regular fa-face-smile"></i>
           <div class="input-group my-2">
-            <span class="input-group-text" id="basic-addon1">@</span>
             <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
           </div>
           <i class="fa-solid fa-microphone"></i>
         </div>
       </main>
+      
     </div>
   </div>
 
