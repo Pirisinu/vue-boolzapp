@@ -110,19 +110,29 @@ main{
   height: calc(100% - 120px);
   overflow-y: scroll;
 }
+.message_send,
+.message_recived{
+  width: 80%;
+  margin: 0 auto;
+}
+.message_send{
+  display: flex;
+  justify-content: end;
+}
 .main_content .message{
   border-radius: 10px;
+  margin: 8px;
+  padding: 5px 5px;
 }
 .main_content .message span{
-  display: flex;
   padding: 10px;
 }
-.main_content .message .sent{
+.main_content .message.sent{
   background-color: #D5F9BA;
-  flex-direction: row-reverse;
-
+  width: 40%;
 }
-.main_content .message .received{
+.main_content .message.received{
+  width: 40%;
   background-color: white;
 }
 .message_input{
