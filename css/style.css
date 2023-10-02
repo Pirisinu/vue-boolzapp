@@ -46,6 +46,12 @@ aside{
 main{
   width: 70%;
 }
+.main_content{
+  background: url(../img/mine.jpg);
+  height: calc(100% - 60px);
+  overflow-y: scroll;
+  
+}
 /* EFFECT HOVER */
 .my_user:hover{
   cursor: pointer;
