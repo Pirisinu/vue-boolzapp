@@ -110,6 +110,21 @@ main{
   height: calc(100% - 120px);
   overflow-y: scroll;
 }
+.main_content .message{
+  border-radius: 10px;
+}
+.main_content .message span{
+  display: flex;
+  padding: 10px;
+}
+.main_content .message .sent{
+  background-color: #D5F9BA;
+  flex-direction: row-reverse;
+
+}
+.main_content .message .received{
+  background-color: white;
+}
 .message_input{
   height: 60px;
 }
