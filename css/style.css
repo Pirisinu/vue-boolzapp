@@ -58,6 +58,7 @@ i{
 /* ASIDE */
 aside{
   width: 30%;
+  overflow: hidden;
 }
 .user_img{
   height: 40px;
@@ -92,7 +93,14 @@ aside{
 .chat_search input{
   font-size: .3;
 }
-
+.chats{
+  background-color: white;
+  overflow: scroll;
+}
+.chats .chat .message_time{
+  color: gray;
+  font-size: .7rem;
+}
 /* MAIN */
 main{
   width: 70%;
