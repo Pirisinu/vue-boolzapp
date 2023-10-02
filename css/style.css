@@ -1,5 +1,16 @@
+/* GENERAL */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+.my_container{
+  background: linear-gradient(#009688 100px, #D6DBD8 100px);
+  height: 100vh;
+}
+.chat-box{
+  height: 90%;
+  width: 80%;
+  background-color: #EAEAEA;
+  min-width: 792px;
 }
