@@ -48,9 +48,15 @@ main{
 }
 .main_content{
   background: url(../img/mine.jpg);
-  height: calc(100% - 60px);
+  height: calc(100% - 120px);
   overflow-y: scroll;
-  
+}
+.message_input{
+  height: 60px;
+}
+.message_input i {
+  font-size: 1.5rem;
+  margin: 0px 20px;
 }
 /* EFFECT HOVER */
 .my_user:hover{
