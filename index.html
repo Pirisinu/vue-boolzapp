@@ -103,6 +103,14 @@
         <div class="main_content">
           <div v-if="chatSel">
 
+            <div 
+            v-for="message in chatSel.messages" 
+            class="message"
+            :class="{'sent': message.status === 'sent','received': message.status === 'received'}"
+            :key="message.date">
+              <span>{{message.message}}</span>
+            </div>
+
           </div>
 
 
