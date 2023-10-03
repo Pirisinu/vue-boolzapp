@@ -121,7 +121,17 @@ main{
   padding: 5px 10px;
 }
 .main_content .message span{
-  padding: 10px;
+  padding: 12px;
+  float: left;
+  margin-right: 50px;
+}
+.main_content .message span.date-message{
+  font-size: .7rem;
+  color: gray;
+  margin-right: 0px;
+  padding-top: 25px;
+  float: right;
+  text-align: end;
 }
 .main_content .message.sent{
   background-color: #D5F9BA;
