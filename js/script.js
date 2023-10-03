@@ -169,6 +169,12 @@ createApp({
       chatSel: null
     }
   },
+  methods:{
+    setChatSel(chat){
+        this.chatSel = chat;
+        console.log(this.chatSel);
+    }
+  },
   mounted(){
     console.log('Ciao da Vue');
   }

@@ -57,7 +57,7 @@
         </div>
 
         <div class="chats h-100 ">
-          <div v-for="chat in contacts" class="chat">
+          <div v-for="chat in contacts" class="chat" @click.stop="setChatSel(chat)">
 
             <div class="my_user rounded-0 py-2 border-bottom border-1">
               <div class="d-flex">
