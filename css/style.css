@@ -115,25 +115,27 @@ main{
   width: 80%;
   margin: 0 auto;
 }
-.message_send{
-  display: flex;
-  justify-content: end;
-}
 .main_content .message{
   border-radius: 10px;
   margin: 8px;
-  padding: 5px 5px;
+  padding: 5px 10px;
 }
 .main_content .message span{
   padding: 10px;
 }
 .main_content .message.sent{
   background-color: #D5F9BA;
-  width: 40%;
+  max-width: 70%;
+  display: flex;
+  clear: both;
+  float: right;
 }
 .main_content .message.received{
-  width: 40%;
+  max-width: 70%;
   background-color: white;
+  display: flex;
+  clear: both;
+  float: left;
 }
 .message_input{
   height: 60px;

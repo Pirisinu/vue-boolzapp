@@ -18,6 +18,8 @@ ESERCIZIO: Vue-Boolzapp
     - Cancella messaggio: cliccando sul messaggio appare un menu a tendina che permette di cancellare il messaggio selezionato
     - Visualizzazione ora e ultimo messaggio inviato/ricevuto nella lista dei contatti
 
-## Svolgimento: Milestone 1
+## Svolgimento: Milestone 2
 
-1. 
+1. Vado a dichiarare che nessuna chat è stata selezonata
+1. Creo un metodo che vada a rendere cliccata la chat dalla aside
+1. Inserisco un ciclo che mi stampi i messaggi in base alla chat cliccata

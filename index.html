@@ -59,7 +59,7 @@
         <div class="chats h-100 ">
           <div v-for="chat in contacts" class="chat">
 
-            <div class="my_user rounded-0 py-2 ">
+            <div class="my_user rounded-0 py-2 border-bottom border-1">
               <div class="d-flex">
                 <img class="user_img ms-2 " :src="chat.avatar" alt="chjat.name">
   
@@ -73,120 +73,7 @@
             </div>
 
           </div>
-          <div class="chat">
-
-            <div class="my_user rounded-0 py-2 ">
-              <div class="d-flex">
-                <img class="user_img ms-2 " src="img/avatar_2.jpg" alt="">
-  
-                <div class="ms-3 h-100 ">
-                  <p class="user_name m-0 ">Fabio</p>
-                  <p class="user_access m-0">Ultimo accesso oggi alle 10.00</p>
-                </div>
-              </div>
-
-              <div class="message_time mb-4">12.00</div>
-            </div>
-
-          </div>
-          <div class="chat">
-
-            <div class="my_user rounded-0 py-2 ">
-              <div class="d-flex">
-                <img class="user_img ms-2 " src="img/avatar_3.jpg" alt="">
-  
-                <div class="ms-3 h-100 ">
-                  <p class="user_name m-0 ">Samuele</p>
-                  <p class="user_access m-0">Ultimo accesso oggi alle 10.00</p>
-                </div>
-              </div>
-
-              <div class="message_time mb-4">12.00</div>
-            </div>
-
-          </div>
-          <div class="chat">
-
-            <div class="my_user rounded-0 py-2 ">
-              <div class="d-flex">
-                <img class="user_img ms-2 " src="img/avatar_4.jpg" alt="">
-  
-                <div class="ms-3 h-100 ">
-                  <p class="user_name m-0 ">Michele</p>
-                  <p class="user_access m-0">Ultimo accesso oggi alle 10.00</p>
-                </div>
-              </div>
-
-              <div class="message_time mb-4">12.00</div>
-            </div>
-
-          </div>
-          <div class="chat">
-
-            <div class="my_user rounded-0 py-2 ">
-              <div class="d-flex">
-                <img class="user_img ms-2 " src="img/avatar_1.jpg" alt="">
-  
-                <div class="ms-3 h-100 ">
-                  <p class="user_name m-0 ">Michele</p>
-                  <p class="user_access m-0">Ultimo accesso oggi alle 10.00</p>
-                </div>
-              </div>
-
-              <div class="message_time mb-4">12.00</div>
-            </div>
-
-          </div>
-          <div class="chat">
-
-            <div class="my_user rounded-0 py-2 ">
-              <div class="d-flex">
-                <img class="user_img ms-2 " src="img/avatar_1.jpg" alt="">
-  
-                <div class="ms-3 h-100 ">
-                  <p class="user_name m-0 ">Michele</p>
-                  <p class="user_access m-0">Ultimo accesso oggi alle 10.00</p>
-                </div>
-              </div>
-
-              <div class="message_time mb-4">12.00</div>
-            </div>
-
-          </div>
-          <div class="chat">
-
-            <div class="my_user rounded-0 py-2 ">
-              <div class="d-flex">
-                <img class="user_img ms-2 " src="img/avatar_1.jpg" alt="">
-  
-                <div class="ms-3 h-100 ">
-                  <p class="user_name m-0 ">Michele</p>
-                  <p class="user_access m-0">Ultimo accesso oggi alle 10.00</p>
-                </div>
-              </div>
-
-              <div class="message_time mb-4">12.00</div>
-            </div>
-
-          </div>
-          <div class="chat">
-
-            <div class="my_user rounded-0 py-2 ">
-              <div class="d-flex">
-                <img class="user_img ms-2 " src="img/avatar_1.jpg" alt="">
-  
-                <div class="ms-3 h-100 ">
-                  <p class="user_name m-0 ">Michele</p>
-                  <p class="user_access m-0">Ultimo accesso oggi alle 10.00</p>
-                </div>
-              </div>
-
-              <div class="message_time mb-4">12.00</div>
-            </div>
-
-          </div>
-
-
+          
         </div>
 
       </aside>
@@ -214,39 +101,8 @@
 
         </div>
         <div class="main_content">
-          <!-- MSG send -->
-          <div class="message_send">
-            <div class="message sent ">
-              <span>Inviato</span>
-            </div>
-          </div>
+          <div v-if="chatSel">
 
-          <!-- MSG received -->
-          <div class="message_recived">
-            <div class="message received">
-              <span>Ricevuto</span>
-            </div>
-          </div>
-
-          <!-- MSG received -->
-          <div class="message_recived">
-            <div class="message received">
-              <span>Ricevuto</span>
-            </div>
-          </div>
-
-          <!-- MSG received -->
-          <div class="message_recived">
-            <div class="message received">
-              <span>Ricevuto</span>
-            </div>
-          </div>
-
-          <!-- MSG received -->
-          <div class="message_recived">
-            <div class="message received">
-              <span>Ricevuto</span>
-            </div>
           </div>
 
 

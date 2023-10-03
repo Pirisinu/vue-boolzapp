@@ -165,7 +165,8 @@ createApp({
                 }
             ],
         }
-      ]
+      ],
+      chatSel: null
     }
   },
   mounted(){
