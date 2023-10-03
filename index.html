@@ -53,11 +53,18 @@
           <span class="input-group-text h-100 " id="basic-addon1">
             <i class="fa-solid fa-magnifying-glass"></i>
           </span>
-          <input type="text" class="form-control h-100 " placeholder="Cerca o inizia una nuova chat" aria-label="Username" aria-describedby="basic-addon1">
+          <input 
+          v-model="chatWanted"
+          type="text" 
+          class="form-control h-100 " 
+          placeholder="Cerca o inizia una nuova chat" 
+          aria-label="Username" 
+          aria-describedby="basic-addon1"
+          >
         </div>
 
         <div class="chats h-100 ">
-          <div v-for="chat in contacts" class="chat" @click.stop="chatSel = chat">
+          <div v-for="chat in serchedChat" class="chat" @click.stop="chatSel = chat">
 
             <div class="my_user rounded-0 py-2 border-bottom border-1">
               <div class="d-flex">

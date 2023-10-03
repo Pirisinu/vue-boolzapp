@@ -7,7 +7,8 @@ createApp({
     return{
       contacts,
       chatSel: null,
-      newMessage: ''
+      newMessage: '',
+      chatWanted: ''
     }
   },
   methods:{
@@ -25,7 +26,7 @@ createApp({
       this.chatSel.messages.push(messageFormatted);
       //Reset
       this.newMessage = '';
-
+      //timeout di risposta automatica
       setTimeout(()=> {
         const replyMessagge = {
           date: dateFormatted,
@@ -34,7 +35,14 @@ createApp({
         };
         this.chatSel.messages.push(replyMessagge);
       },1000)
+    },
+  },
+  computed:{
+    serchedChat(){
+      const charToSearch = this.chatWanted.toLowerCase();
+      return this.contacts.filter(contact => contact.name.toLowerCase().includes(charToSearch))
     }
+
   },
   mounted(){
   }
