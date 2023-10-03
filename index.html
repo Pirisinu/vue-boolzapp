@@ -57,15 +57,15 @@
         </div>
 
         <div class="chats h-100 ">
-          <div class="chat">
+          <div v-for="chat in contacts" class="chat">
 
             <div class="my_user rounded-0 py-2 ">
               <div class="d-flex">
-                <img class="user_img ms-2 " src="img/avatar_1.jpg" alt="">
+                <img class="user_img ms-2 " :src="chat.avatar" alt="chjat.name">
   
                 <div class="ms-3 h-100 ">
-                  <p class="user_name m-0 ">Michele</p>
-                  <p class="user_access m-0">Ultimo accesso oggi alle 10.00</p>
+                  <p class="user_name m-0 ">{{chat.name}}</p>
+                  <p class="user_access m-0">Ultimo accesso oggi alle </p>
                 </div>
               </div>
 
