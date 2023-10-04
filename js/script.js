@@ -1,5 +1,5 @@
 import { contacts } from '../js/contacts.js'
-
+const DateTime = luxon.DateTime;
 const { createApp } = Vue;
 
 createApp({
@@ -27,20 +27,14 @@ createApp({
 
       //timeout di risposta automatica
       setTimeout(()=> {
-        const replyMessagge = {
+        const replyMessage = {
           date: dateFormatted,
           message: 'ok',
           status: 'received'
         };
-        this.pushMessage(replyMessagge);
+        this.pushMessage(replyMessage);
       },1000)
     },
-    /* DATE FORMATTER */
-    getCurrentFormattedDate(){
-      const dateCurrent = new Date();
-      return `${dateCurrent.getDate()}/${dateCurrent.getMonth() + 1}/${dateCurrent.getFullYear()} ${dateCurrent.getHours()}:${dateCurrent.getMinutes()}:${dateCurrent.getSeconds()}`
-    },
-
     /* PUSH MESSAGE */
     pushMessage(message) {
       if(this.chatSel){
