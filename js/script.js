@@ -35,20 +35,26 @@ createApp({
         this.pushMessage(replyMessagge);
       },1000)
     },
+    /* DATE FORMATTER */
     getCurrentFormattedDate(){
       const dateCurrent = new Date();
       return `${dateCurrent.getDate()}/${dateCurrent.getMonth() + 1}/${dateCurrent.getFullYear()} ${dateCurrent.getHours()}:${dateCurrent.getMinutes()}:${dateCurrent.getSeconds()}`
     },
+
+    /* PUSH MESSAGE */
     pushMessage(message) {
       if(this.chatSel){
         this.chatSel.messages.push(message)
       }
     },
+
+    /* RESET */
     resetNewMessageInput(){
       this.newMessage = '';
     },
   },
   computed:{
+    /* FILTER CHAT w CHAR INPUT */
     serchedChat(){
       const charToSearch = this.chatWanted.toLowerCase();
       return this.contacts.filter(contact =>
