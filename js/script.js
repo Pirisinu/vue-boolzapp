@@ -41,6 +41,10 @@ createApp({
         this.chatSel.messages.push(message)
       }
     },
+    /* LAST MESSAGE RECIVED */
+    getLastMessage(chat){
+      return chat.messages.at(-1).message;
+    },
 
     /* RESET */
     resetNewMessageInput(){

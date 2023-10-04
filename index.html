@@ -68,17 +68,21 @@
 
         <!-- Aside chat list -->
         <div class="chats h-100 ">
-          <div v-for="chat in serchedChat" class="chat" @click.stop="chatSel = chat">
+          <div 
+          v-for="chat in serchedChat" 
+          class="chat" 
+          @click.stop="chatSel = chat"
+          >
 
             <div class="my_user rounded-0 py-2 border-bottom border-1">
               <div class="d-flex">
-                <img class="user_img ms-2 " :src="chat.avatar" alt="chat.name">
+                <img class="user_img ms-2 " :src="chat.avatar" :alt="">
   
                 <div class="ms-3 h-100 ">
                   <p class="user_name m-0 ">{{chat.name}}</p>
                   <p class="user_access m-0">
                     Ultimo messaggio inviato 
-                    {{ chat.lastMessage || 'Nessun messaggio inviato' }}</p>
+                    {{ getLastMessage(chat) }}</p>
                 </div>
               </div>
 
