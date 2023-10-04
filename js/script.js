@@ -45,6 +45,12 @@ createApp({
     getLastMessage(chat){
       return chat.messages.at(-1).message;
     },
+    /* LAST MESSAGE DATE  RECIVED */
+    getLastDate(chat){
+      const lastMessageDate = chat.messages.at(-1).date;
+      return DateTime.fromISO(lastMessageDate).toFormat('HH:mm');
+    },
+    
 
     /* RESET */
     resetNewMessageInput(){

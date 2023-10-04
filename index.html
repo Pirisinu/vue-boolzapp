@@ -76,7 +76,7 @@
 
             <div class="my_user rounded-0 py-2 border-bottom border-1">
               <div class="d-flex">
-                <img class="user_img ms-2 " :src="chat.avatar" :alt="">
+                <img class="user_img ms-2 " :src="chat.avatar" alt="">
   
                 <div class="ms-3 h-100 ">
                   <p class="user_name m-0 ">{{chat.name}}</p>
@@ -86,7 +86,7 @@
                 </div>
               </div>
 
-              <div class="message_time mb-4">12.00</div>
+              <div class="message_time mb-4">{{ getLastDate(chat) }}</div>
             </div>
 
           </div>
