@@ -1,5 +1,4 @@
 import { contacts } from '../js/contacts.js'
-const DateTime = luxon.DateTime;
 const { createApp } = Vue;
 
 createApp({
@@ -14,7 +13,7 @@ createApp({
   methods:{
     //Gestione del messaggio utente
     messageSend(){
-      const dateFormatted = this.getCurrentFormattedDate();
+      const dateFormatted = this.getFormatDate();
       const messageFormatted = {
         date : dateFormatted,
         message: this.newMessage,
@@ -47,10 +46,12 @@ createApp({
     },
     /* LAST MESSAGE DATE  RECIVED */
     getLastDate(chat){
-      const lastMessageDate = chat.messages.at(-1).date;
-      return DateTime.fromISO(lastMessageDate).toFormat('HH:mm');
+      return chat.messages.at(-1).date;
     },
-    
+
+    getFormatDate(){
+      this.contacts.date
+    },
 
     /* RESET */
     resetNewMessageInput(){
@@ -66,7 +67,6 @@ createApp({
       );
     },
   },
-  mounted(){
-  }
+  mounted(){  }
   
 }).mount('#app');
